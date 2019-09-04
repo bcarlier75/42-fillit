@@ -8,6 +8,9 @@ The problem is easy to explain but harder to solve. Given a set of Tetrominoes, 
 
 For this project we implemented a resursive [backtracking algorithm](https://en.wikipedia.org/wiki/Backtracking).
 
----
+## Useful links
 
+- The [fillit PDF subject](https://github.com/bcarlier75/fillit/blob/master/rcs/fillit.pdf)
+- A [Backtracking simple explanation](https://www.youtube.com/watch?v=gBC_Fd8EE8A)
+---
 Credit to [Beth Locke](https://medium.com/@bethnenniger) for the picture.
