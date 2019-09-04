@@ -7,3 +7,7 @@ The problem is easy to explain but harder to solve. Given a set of Tetrominoes, 
 ![Example](rcs/Example_of_solving.png)
 
 For this project we implemented a resursive [backtracking algorithm](https://en.wikipedia.org/wiki/Backtracking).
+
+---
+
+Credit to [Beth Locke](https://medium.com/@bethnenniger) for the picture.
