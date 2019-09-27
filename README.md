@@ -10,7 +10,7 @@ For this project we implemented a resursive [backtracking algorithm](https://en.
 
 ## Useful links
 
-- The [fillit PDF subject](https://github.com/bcarlier75/fillit/blob/master/rcs/fillit.pdf)
-- A [Backtracking simple explanation](https://www.youtube.com/watch?v=gBC_Fd8EE8A)
+- The [PDF of the project Fillit](https://github.com/bcarlier75/fillit/blob/master/rcs/fillit.pdf)
+- A [simple explanation of the backtracking algorithm](https://www.youtube.com/watch?v=gBC_Fd8EE8A)
 ---
 Credit to [Beth Locke](https://medium.com/@bethnenniger) for the picture.
