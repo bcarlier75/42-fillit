@@ -6,7 +6,7 @@
 /*   By: bcarlier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/12/06 12:39:22 by bcarlier          #+#    #+#             */
-/*   Updated: 2019/02/22 10:28:56 by bcarlier         ###   ########.fr       */
+/*   Updated: 2019/09/27 14:17:37 by bcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,4 +99,5 @@ int					ft_sqrt(int nb);
 void				ft_swap(int *a, int *b);
 int					ft_countwords(char const *str, char c);
 char				*ft_str_init(size_t size, char c);
+
 #endif

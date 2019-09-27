@@ -6,7 +6,7 @@
 #    By: bcarlier <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/02/14 10:22:08 by bcarlier          #+#    #+#              #
-#    Updated: 2019/09/04 11:33:09 by bcarlier         ###   ########.fr        #
+#    Updated: 2019/09/27 14:05:50 by bcarlier         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = fillit
 
 SRC = 	solver.c			\
 		main.c				\
-		read_and_check.c	\
+		read_and_check.c
 
 CFLAGS += -Wall -Wextra -Werror -I libft/
 

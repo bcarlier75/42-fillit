@@ -6,7 +6,7 @@
 /*   By: bcarlier <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/02/22 09:56:11 by bcarlier          #+#    #+#             */
-/*   Updated: 2019/09/04 10:52:31 by bcarlier         ###   ########.fr       */
+/*   Updated: 2019/09/27 14:15:28 by bcarlier         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,41 +35,41 @@ static inline void	connect(t_tetro *tetris)
 	}
 }
 
-static inline void	starting_point(t_tetro *tetro)
+static inline void	starting_point(t_tetro *tetris)
 {
-	if (tetro->previous == NULL)
+	if (tetris->previous == NULL)
 	{
-		tetro->x = 0;
-		tetro->y = 0;
+		tetris->x = 0;
+		tetris->y = 0;
 	}
 	else
 	{
-		tetro->x = tetro->previous->x + tetro->width - 1;
-		tetro->y = tetro->previous->y;
+		tetris->x = tetris->previous->x + tetris->width - 1;
+		tetris->y = tetris->previous->y;
 	}
 }
 
-static inline int	solve_board(t_tetro *tet, unsigned char const size,
+static inline int	solve_board(t_tetro *tetris, unsigned char const size,
 		int16_t *board)
 {
-	if (tet->letter == 0)
+	if (tetris->letter == 0)
 		return (1);
-	starting_point(tet);
-	while (tet->y + tet->height <= size)
+	starting_point(tetris);
+	while (tetris->y + tetris->height <= size)
 	{
-		while (tet->x + tet->width <= size)
+		while (tetris->x + tetris->width <= size)
 		{
-			if (!(*(int64_t *)(board + tet->y) & tet->value << tet->x))
+			if (!(*(int64_t *)(board + tetris->y) & tetris->value << tetris->x))
 			{
-				*(int64_t *)(board + tet->y) ^= tet->value << tet->x;
-				if (solve_board(tet + 1, size, board) == 1)
+				*(int64_t *)(board + tetris->y) ^= tetris->value << tetris->x;
+				if (solve_board(tetris + 1, size, board) == 1)
 					return (1);
-				*(int64_t *)(board + tet->y) ^= tet->value << tet->x;
+				*(int64_t *)(board + tetris->y) ^= tetris->value << tetris->x;
 			}
-			(tet->x)++;
+			(tetris->x)++;
 		}
-		tet->x = 0;
-		(tet->y)++;
+		tetris->x = 0;
+		(tetris->y)++;
 	}
 	return (0);
 }
